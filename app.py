@@ -41,8 +41,8 @@ def get_odds():
     odds = {}
 
     for game in data:
-            if not isinstance(game, dict):
-            continue
+        if not isinstance(game, dict):
+            continue  # This line needs to be indented
 
         for book in game.get("bookmakers", []):
             for market in book.get("markets", []):
